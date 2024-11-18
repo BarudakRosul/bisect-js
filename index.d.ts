@@ -9,10 +9,10 @@
  * @param {T} x - The item to be inserted.
  * @param {number} [lo=0] - The lower bound of the slice to search.
  * @param {number | null} [hi=null] - The upper bound of the slice to search. Defaults to array length.
- * @param {(item: T) => U | null} [key=null] - A function that extracts a comparison key from each element in the array.
+ * @param {((item: T) => U) | null} [key=null] - A function that extracts a comparison key from each element in the array.
  * @returns {number} - The index where the item should be inserted.
  */
-declare function bisectRight<T, U>(a: Array<T>, x: T, lo?: number, hi?: number | null, key?: (item: T) => U | null): number;
+declare function bisectRight<T, U>(a: Array<T>, x: T, lo?: number, hi?: number | null, key?: ((item: T) => U) | null): number;
 
 /**
  * Return the index where to insert item x in array a, assuming a is sorted.
@@ -25,10 +25,10 @@ declare function bisectRight<T, U>(a: Array<T>, x: T, lo?: number, hi?: number |
  * @param {T} x - The item to be inserted.
  * @param {number} [lo=0] - The lower bound of the slice to search.
  * @param {number | null} [hi=null] - The upper bound of the slice to search. Defaults to array length.
- * @param {(item: T) => U | null} [key=null] - A function that extracts a comparison key from each element in the array.
+ * @param {((item: T) => U) | null} [key=null] - A function that extracts a comparison key from each element in the array.
  * @returns {number} - The index where the item should be inserted.
  */
-declare function bisectLeft<T, U>(a: Array<T>, x: T, lo?: number, hi?: number | null, key?: (item: T) => U | null): number;
+declare function bisectLeft<T, U>(a: Array<T>, x: T, lo?: number, hi?: number | null, key?: ((item: T) => U) | null): number;
 
 /**
  * Insert item x into array a and keep it sorted assuming a is already sorted.
@@ -39,9 +39,9 @@ declare function bisectLeft<T, U>(a: Array<T>, x: T, lo?: number, hi?: number | 
  * @param {T} x - The item to be inserted.
  * @param {number} [lo=0] - The lower bound of the slice to search.
  * @param {number | null} [hi=null] - The upper bound of the slice to search. Defaults to array length.
- * @param {(item: T) => U | null} [key=null] - A function that extracts a comparison key from each element in the array.
+ * @param {((item: T) => U) | null} [key=null] - A function that extracts a comparison key from each element in the array.
  */
-declare function insortRight<T, U>(a: Array<T>, x: T, lo?: number, hi?: number | null, key?: (item: T) => U | null): void;
+declare function insortRight<T, U>(a: Array<T>, x: T, lo?: number, hi?: number | null, key?: ((item: T) => U) | null): void;
 
 /**
  * Insert item x into array a and keep it sorted assuming a is already sorted.
@@ -52,9 +52,9 @@ declare function insortRight<T, U>(a: Array<T>, x: T, lo?: number, hi?: number |
  * @param {T} x - The item to be inserted.
  * @param {number} [lo=0] - The lower bound of the slice to search.
  * @param {number | null} [hi=null] - The upper bound of the slice to search. Defaults to array length.
- * @param {(item: T) => U | null} [key=null] - A function that extracts a comparison key from each element in the array.
+ * @param {((item: T) => U) | null} [key=null] - A function that extracts a comparison key from each element in the array.
  */
-declare function insortLeft<T, U>(a: Array<T>, x: T, lo?: number, hi?: number | null, key?: (item: T) => U | null): void;
+declare function insortLeft<T, U>(a: Array<T>, x: T, lo?: number, hi?: number | null, key?: ((item: T) => U) | null): void;
 
 // Aliases
 declare const bisect: typeof bisectRight;
