@@ -1,0 +1,38 @@
+{
+  "name": "@barudakrosul/bisect",
+  "version": "0.0.1",
+  "description": "Utility for searching and inserting elements in a sorted array using a binary algorithm",
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarudakRosul/bisect-js.git"
+  },
+  "keywords": [
+    "bisect",
+    "binary",
+    "sorted",
+    "array",
+    "insertion",
+    "insort",
+    "sorting",
+    "binary-search",
+    "array-insertion"
+  ],
+  "author": "Barudak Rosul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BarudakRosul/bisect-js/issues"
+  },
+  "homepage": "https://github.com/BarudakRosul/bisect-js#readme",
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "mocha": "^10.8.2"
+  }
+}
